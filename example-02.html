@@ -1,0 +1,328 @@
+<!doctype html>
+<!-- saved from url=(0027)http://www.helpxplain.com/ -->
+<!--
+
+Hey!
+Glad you take a look into the source, Dude... :-)
+
+                 This slideshow was made with
+.__           .__           ____  ___      .__         .__
+|  |__   ____ |  | ______   \   \/  /_____ |  | _____  |__| ____
+|  |  \_/ __ \|  | \____ \   \     /\____ \|  | \__  \ |  |/    \
+|   Y  \  ___/|  |_|  |_> >  /     \|  |_> >  |__/ __ \|  |   |  \
+|___|  /\___  >____/   __/  /___/\  \   __/|____(____  /__|___|  /
+     \/     \/     |__|           \_/__|             \/        \/
+
+HelpXplain is the cutting-edge graphics software, that
+creates interactive HTML5 and Javascript slideshows
+for the Web. No Flash here, believe us! Just standards-
+compliant HTML5 & CSS & Javascript. 100% responsive and
+100% cross-platform.
+
+Visit our website, download the trial and give it a run!
+You'll love it, promise.
+
+http://www.helpxplain.com
+
+-->
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>HelpXplain screencast for eWriter with 11 slides</title>
+<meta name="description" content="Screencast: Example with animated cursor and slide annotations." />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta property="og:title" content="HelpXplain screencast for eWriter with 11 slides" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Screencast: Example with animated cursor and slide annotations." />
+<meta property="og:image" content="./example-02/preview.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="792" />
+<meta property="og:image:height" content="644" />
+<meta property="og:image:alt" content="HelpXplain screencast for eWriter with 11 slides" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="HelpXplain screencast for eWriter with 11 slides" />
+<meta property="twitter:description" content="Screencast: Example with animated cursor and slide annotations." />
+<meta property="twitter:image" content="./example-02/preview.jpg" />
+<link rel="icon" href="./example-02/favicon.png" type="image/png" />
+<style type="text/css" media="screen">
+body {
+  font-family: Arial,sans-serif;
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial,sans-serif;
+  font-size: 36px;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3 {
+  line-height: 1em;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+ul,ol {
+  line-height: 1em;
+  margin: 0 0 0 2em;
+  padding: 0;
+}
+
+div.fallback {
+  position: absolute;
+  top: 20%;
+  background: #FFF;
+  opacity: 0.9;
+  font-size: 2em;
+  padding: 1em;
+  line-height: 1em
+}
+
+
+
+div.fallback {
+  position: absolute;
+  top: 20%;
+  background: #FFF;
+  opacity: 0.9;
+  font-size: 2em;
+  padding: 1em;
+  line-height: 1em
+}
+
+div#xplplayercontrols {
+	position: fixed;
+	overflow: visible;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1vH;
+	background: none;
+	opacity: 1;
+	margin: 0;
+	overflow: visible;
+	vertical-align: middle;
+	opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+body:hover > div#xplplayercontrols {
+	opacity: 1;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+div#xplplayerprogress {
+	display: block;
+}
+div#xplplayerprogress div {
+	height: 1vH;
+	width: 0%;
+	background: #1072C5;
+}
+div#xplplayercontrols .button {
+  position: absolute;
+  top: -99vH;
+  text-decoration: none;
+  width: 5%;
+  height: 100vH;
+  background: rgba(0,0,0,0.20);
+  opacity: 0.5;
+  cursor: pointer;
+  padding: 1vH;
+  line-height: 100vH;
+  vertical-align: middle;
+}
+div#xplplayerprev {
+	left: 0;
+	border-radius: 0 6px 6px 0;
+}
+div#xplplayernext {
+	right: 0;
+	border-radius: 6px 0 0 6px;
+}
+
+div#xplplayercontrols .disabled {
+	display: none;
+}
+
+div#xplplayercontrols .button:hover {
+  opacity: 1;
+  background: rgba(0,0,0,0.20);
+}
+div#xplplayercontrols .disabled:hover {
+  opacity: 0.1;
+}
+div#xplplayercontrols svg {
+	display: inline-block;
+	width: 100%;
+}
+
+div#xplplayercontrols path {
+  fill: #FFC000;
+  stroke: none;
+  stroke-width: 0px;
+}
+
+div#xplplayerloading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20vH;
+  height: 20vH;
+  margin: -10vH 0 0 -10vH;
+}
+div#xplplayerloading.disabled {
+  display: none;	
+}
+svg.xplspinner {
+  animation: rotate 2s linear infinite;
+  width: 100%;
+  height: 100%;
+}
+svg.xplspinner > circle {
+    stroke: #1072C5;
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+</style>
+</head>
+<body style="background-color:#FFFFFF;position:fixed;top:0;left:0;width:100%;height:100%;overflow:hidden">
+<div id="xplbase" style="display:none;position:absolute;top:50%;left:50%;transform-origin:left top">
+<div id="xplcanvas" style="position:absolute">
+<div class="xplitem frame xplframe" id="slide1" data-scale="1" data-rotate="0" data-frameindex="0" data-framew="792" data-frameh="644" data-framecx="-950.4001" data-framecy="-1545.6" data-framer="0" data-frametrans="0" data-frameshow="4" data-frameposition="fit" style="position:absolute;left:-1346.4001px;top:-1867.6px;width:792px;height:644px">
+<div class="xplitem image" id="capture1" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:792px;height:644px"><img src="./example-02/capture1.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem cursor" id="cursor2" data-scale="1" data-rotate="0" data-frameout="0,movefrom,396,322,0.6995,0,,false" style="position:absolute;left:57px;top:210px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-frameout="0,flash,0,0,0.3,0.6995,,false" ViewBox="0 0 100 100" style="position:absolute;display:none;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./example-02/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem calloutshape" id="callout1" data-scale="1" data-rotate="0" data-framein="0,fadein,0,0,0.5,0.5,,false" style="position:absolute;left:539.83px;top:249.136px;width:204.774px;height:117.003px"><svg style="position:absolute;overflow:visible" width="205" height="117" viewBox="0 0 205 117"><defs><filter id="callout1dropShadow" x="-20%" y="-20%" width="200%" height="200%"><feGaussianBlur in="SourceAlpha" stdDeviation="2" /><feOffset dx="3" dy="3" /><feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></defs><path class="xplsvgpath" filter="url(#callout1dropShadow)" fill="#FFFFD1" fill-rule="evenodd" stroke-width="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M45.6774444580078,-47.5279846191406 L71.8184585571289,0.495726615190506 L0.497558295726776,0.495726615190506 L0.497558295726776,116.498725891113 L204.271560668945,116.498725891113 L204.271560668945,0.495726615190506 L132.950668334961,0.495726615190506 Z "></path></svg><div style="position:absolute;left:2px;top:3.0015px;width:200.774px;height:111px;transform:scale(1)"><div style="width:200.774px;height:111px;transform:scale(1)"><p style="text-align:center">Select the HTML source files</p></div></div>
+</div>
+<div class="xplitem shape" id="shape1" data-scale="1" data-rotate="0" data-framein="0,stroke,0,0,0.5,1,,false" style="position:absolute;left:136.226px;top:119.225px;width:362.17px;height:197.731px"><svg style="position:absolute;overflow:visible" width="362" height="198" viewBox="0 0 362 198"><path class="xplsvgpath" fill="none" fill-rule="evenodd" stroke-width="14" stroke="#FF0000" d="M0,0 M362.170013427734,197.731002807617 M221.236175537109,154.236740112305 C299.608917236328,150.731079101563 355.170013427734,115.210823059082 347.358093261719,78.2934722900391 C338.5205078125,36.5284042358398 256.000793457031,7 170.331085205078,11.4449405670166 C74.5633316040039,16.4137763977051 7,60.062557220459 17.7271347045898,105.331565856934 C29.6011962890625,155.440841674805 129.082489013672,190.731002807617 232.161483764648,184.882751464844 C257.29541015625,183.456741333008 281.802093505859,179.716903686523 304.073547363281,173.953704833984 "></path></svg>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide2" data-scale="1" data-rotate="0" data-frameindex="1" data-framew="792" data-frameh="644" data-framecx="-0.0001" data-framecy="-1545.6" data-framer="0" data-frametrans="0" data-frameshow="3" data-frameposition="fit" style="position:absolute;left:-396.0001px;top:-1867.6px;width:792px;height:644px">
+<div class="xplitem image" id="capture2" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:792px;height:644px"><img src="./example-02/capture2.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem cursor" id="cursor3" data-scale="1" data-rotate="0" data-frameout="1,movefrom,56.9999,210,0.5,0,,false" style="position:absolute;left:138px;top:337px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-frameout="1,flash,0,0,0.3,0.5,,false" ViewBox="0 0 100 100" style="position:absolute;display:none;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./example-02/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem calloutshape" id="callout2" data-scale="1" data-rotate="0" data-framein="1,fadein,0,0,0.5,0.4,,false" style="position:absolute;left:399.536px;top:431.962px;width:204.774px;height:117.003px"><svg style="position:absolute;overflow:visible" width="205" height="117" viewBox="0 0 205 117"><defs><filter id="callout2dropShadow" x="-20%" y="-20%" width="200%" height="200%"><feGaussianBlur in="SourceAlpha" stdDeviation="2" /><feOffset dx="3" dy="3" /><feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></defs><path class="xplsvgpath" filter="url(#callout2dropShadow)" fill="#FFFFD1" fill-rule="evenodd" stroke-width="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M33.616828918457,-44.520809173584 L71.8184585571289,0.495726615190506 L0.497558295726776,0.495726615190506 L0.497558295726776,116.498725891113 L204.271560668945,116.498725891113 L204.271560668945,0.495726615190506 L132.950668334961,0.495726615190506 Z "></path></svg><div style="position:absolute;left:3px;top:3.0015px;width:198.774px;height:111px;transform:scale(1)"><div style="width:198.774px;height:111px;transform:scale(1)"><p style="text-align:center">Adjust settings if required</p></div></div>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide3" data-scale="1" data-rotate="0" data-frameindex="2" data-framew="792" data-frameh="644" data-framecx="950.3998" data-framecy="-1545.6" data-framer="0" data-frametrans="0" data-frameshow="2" data-frameposition="fit" style="position:absolute;left:554.3998px;top:-1867.6px;width:792px;height:644px">
+<div class="xplitem image" id="capture3" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:792px;height:644px"><img src="./example-02/capture3.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem cursor" id="cursor4" data-scale="1" data-rotate="0" data-frameout="2,movefrom,137.9998,337,0.5,0,,false" style="position:absolute;left:61px;top:266px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-frameout="2,flash,0,0,0.3,0.5,,false" ViewBox="0 0 100 100" style="position:absolute;display:none;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./example-02/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide4" data-scale="1" data-rotate="0" data-frameindex="3" data-framew="792" data-frameh="644" data-framecx="-950.4001" data-framecy="-772.8" data-framer="0" data-frametrans="0" data-frameshow="2" data-frameposition="fit" style="position:absolute;left:-1346.4001px;top:-1094.8px;width:792px;height:644px">
+<div class="xplitem image" id="capture4" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:792px;height:644px"><img src="./example-02/capture4.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem cursor" id="cursor5" data-scale="1" data-rotate="0" data-frameout="3,movefrom,60.9998,266,0.5,0,,false" style="position:absolute;left:184px;top:349px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-frameout="3,flash,0,0,0.3,0.5,,false" ViewBox="0 0 100 100" style="position:absolute;display:none;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./example-02/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem calloutshape" id="callout3" data-scale="1" data-rotate="0" data-framein="3,fadein,0,0,0.5,0,,false" style="position:absolute;left:33.3315px;top:493.502px;width:278.427px;height:117.003px"><svg style="position:absolute;overflow:visible" width="278" height="117" viewBox="0 0 278 117"><defs><filter id="callout3dropShadow" x="-20%" y="-20%" width="200%" height="200%"><feGaussianBlur in="SourceAlpha" stdDeviation="2" /><feOffset dx="3" dy="3" /><feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></defs><path class="xplsvgpath" filter="url(#callout3dropShadow)" fill="#FFFFD1" fill-rule="evenodd" stroke-width="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M217.804916381836,-97.5243911743164 L97.59765625,0.495726615190506 L0.498204201459885,0.495726615190506 L0.498204201459885,116.498725891113 L277.925201416016,116.498725891113 L277.925201416016,0.495726615190506 L180.825759887695,0.495726615190506 Z "></path></svg><div style="position:absolute;left:4px;top:3.0015px;width:270.427px;height:111px;transform:scale(1)"><div style="width:270.427px;height:111px;transform:scale(1)"><p style="text-align:center">Define a custom menu for your eBook</p></div></div>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide5" data-scale="1" data-rotate="0" data-frameindex="4" data-framew="792" data-frameh="644" data-framecx="-0.0001" data-framecy="-772.8" data-framer="0" data-frametrans="0" data-frameshow="2" data-frameposition="fit" style="position:absolute;left:-396.0001px;top:-1094.8px;width:792px;height:644px">
+<div class="xplitem image" id="capture5" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:792px;height:644px"><img src="./example-02/capture5.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem cursor" id="cursor6" data-scale="1" data-rotate="0" data-frameout="4,movefrom,184,349,0.6093,0,,false" style="position:absolute;left:550px;top:350px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-frameout="4,flash,0,0,0.3,0.6093,,false" ViewBox="0 0 100 100" style="position:absolute;display:none;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./example-02/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide7" data-scale="1" data-rotate="0" data-frameindex="5" data-framew="792" data-frameh="644" data-framecx="-950.4001" data-framecy="-0.0001" data-framer="0" data-frametrans="0" data-frameshow="2.5" data-frameposition="fit" style="position:absolute;left:-1346.4001px;top:-322.0001px;width:792px;height:644px">
+<div class="xplitem image" id="capture7" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:792px;height:644px"><img src="./example-02/capture7.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem cursor" id="cursor8" data-scale="1" data-rotate="0" data-frameout="5,movefrom,549.9999,350,0.9835,0,,false" style="position:absolute;left:69px;top:317px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-frameout="5,flash,0,0,0.3,0.9835,,false" ViewBox="0 0 100 100" style="position:absolute;display:none;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./example-02/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide8" data-scale="1" data-rotate="0" data-frameindex="6" data-framew="792" data-frameh="644" data-framecx="-0.0001" data-framecy="-0.0001" data-framer="0" data-frametrans="0" data-frameshow="2" data-frameposition="fit" style="position:absolute;left:-396.0001px;top:-322.0001px;width:792px;height:644px">
+<div class="xplitem image" id="capture8" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:792px;height:644px"><img src="./example-02/capture8.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem cursor" id="cursor9" data-scale="1" data-rotate="0" data-frameout="6,movefrom,68.9999,317.0001,0.5,0,,false" style="position:absolute;left:134px;top:171px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-frameout="6,flash,0,0,0.3,0.5,,false" ViewBox="0 0 100 100" style="position:absolute;display:none;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./example-02/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem calloutshape" id="callout4" data-scale="1" data-rotate="0" data-framein="6,fadein,0,0,0.5,0.4,,false" style="position:absolute;left:503.418px;top:153.544px;width:278.427px;height:117.003px"><svg style="position:absolute;overflow:visible" width="278" height="117" viewBox="0 0 278 117"><defs><filter id="callout4dropShadow" x="-20%" y="-20%" width="200%" height="200%"><feGaussianBlur in="SourceAlpha" stdDeviation="2" /><feOffset dx="3" dy="3" /><feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></defs><path class="xplsvgpath" filter="url(#callout4dropShadow)" fill="#FFFFD1" fill-rule="evenodd" stroke-width="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M-134.176361083984,23.4900054931641 L0.498204201459885,41.0967788696289 L0.498204201459885,0.495726615190506 L277.925201416016,0.495726615190506 L277.925201416016,116.498725891113 L0.498204201459885,116.498725891113 L0.498204201459885,75.8976745605469 Z "></path></svg><div style="position:absolute;left:6px;top:3.0015px;width:266.427px;height:111px;transform:scale(1)"><div style="width:266.427px;height:111px;transform:scale(1)"><p style="text-align:center">Protect your eBook with a password</p></div></div>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide9" data-scale="1" data-rotate="0" data-frameindex="7" data-framew="792" data-frameh="644" data-framecx="950.3998" data-framecy="-0.0001" data-framer="0" data-frametrans="0" data-frameshow="1" data-frameposition="fit" style="position:absolute;left:554.3998px;top:-322.0001px;width:792px;height:644px">
+<div class="xplitem image" id="capture9" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:792px;height:644px"><img src="./example-02/capture9.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem cursor" id="cursor10" data-scale="1" data-rotate="0" data-frameout="7,movefrom,133.9998,171.0001,0.5,0,,false" style="position:absolute;left:381.184px;top:169.974px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-frameout="7,flash,0,0,0.3,0.5,,false" ViewBox="0 0 100 100" style="position:absolute;display:none;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./example-02/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide10" data-scale="1" data-rotate="0" data-frameindex="8" data-framew="792" data-frameh="644" data-framecx="-950.4001" data-framecy="772.8" data-framer="0" data-frametrans="0" data-frameshow="3" data-frameposition="fit" style="position:absolute;left:-1346.4001px;top:450.8px;width:792px;height:644px">
+<div class="xplitem image" id="capture10" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:792px;height:644px"><img src="./example-02/capture10.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem cursor" id="cursor11" data-scale="1" data-rotate="0" data-frameout="8,movefrom,381.1838,169.974,1,0,,false" style="position:absolute;left:651.144px;top:584.589px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-frameout="8,flash,0,0,0.3,1,,false" ViewBox="0 0 100 100" style="position:absolute;display:none;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./example-02/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide11" data-scale="1" data-rotate="0" data-frameindex="9" data-framew="792" data-frameh="644" data-framecx="-0.0001" data-framecy="772.8" data-framer="0" data-frametrans="0" data-frameshow="8" data-frameposition="fit" style="position:absolute;left:-396.0001px;top:450.8px;width:792px;height:644px">
+<div class="xplitem image" id="capture11" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:792px;height:644px"><img src="./example-02/capture11.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem image" id="image1" data-scale="1" data-rotate="0" style="position:absolute;left:84.5558px;top:61.3571px;width:778px;height:621px"><img src="./example-02/picture1.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem calloutshape" id="callout5" data-scale="1" data-rotate="0" data-framein="9,fadein,0,0,0.5,0,,false" style="position:absolute;left:12.1457px;top:426.931px;width:278.427px;height:145.265px"><svg style="position:absolute;overflow:visible" width="278" height="145" viewBox="0 0 278 145"><defs><filter id="callout5dropShadow" x="-20%" y="-20%" width="200%" height="200%"><feGaussianBlur in="SourceAlpha" stdDeviation="2" /><feOffset dx="3" dy="3" /><feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></defs><path class="xplsvgpath" filter="url(#callout5dropShadow)" fill="#00B050" fill-rule="evenodd" stroke-width="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M210.579956054688,-62.6294708251953 L97.59765625,0.496558010578156 L0.498204201459885,0.496558010578156 L0.498204201459885,144.76155090332 L277.925201416016,144.76155090332 L277.925201416016,0.496558010578156 L180.825759887695,0.496558010578156 Z "></path></svg><div style="position:absolute;left:5px;top:17.1325px;width:268.427px;height:111px;transform:scale(1)"><div style="width:268.427px;height:111px;transform:scale(1)"><p style="text-align:center;color:#FFFFFF">Your eBook is ready to be deployed!</p></div></div>
+</div>
+<div class="xplitem cursor" id="cursor12" data-scale="1" data-rotate="0" style="position:absolute;left:651.144px;top:584.589px;width:69px;height:67px"><img src="./example-02/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+</div>
+</div>
+</div>
+
+<div id="xplplayerloading"><svg class="xplspinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg></div>
+<div id="xplplayercontrols" data-overlay="1">
+<div id="xplplayerprogress"><div id="xplplayerprogressindicator"></div></div>
+
+<div id="xplplayerprev" class="button" onclick="xplain.navigate(-1)">
+<svg viewBox="0 0 70 100"><path d="M0,0 M70,100 M69.4803009033203,18.6013679504395 C69.4608993530273,17.3841934204102 68.9419860839844,16.1814231872559 68.064697265625,15.3202447891235 L54.3764495849609,1.89102363586426 C53.4807357788086,1.01177537441254 52.2214241027832,0.5 50.9543876647949,0.5 C49.6873474121094,0.5 48.428035736084,1.01177537441254 47.5323219299316,1.89102303981781 L1.91785323619843,46.6423110961914 C1.02164697647095,47.521068572998 0.5,48.7565612792969 0.5,49.9996185302734 C0.5,51.24267578125 1.02164697647095,52.4781646728516 1.91785323619843,53.3569221496582 L47.5323219299316,98.1082153320313 C48.428035736084,98.9874649047852 49.6873474121094,99.4992370605469 50.9543876647949,99.4992370605469 C52.2214241027832,99.4992370605469 53.4807357788086,98.9874572753906 54.3764495849609,98.1082153320313 L68.064697265625,84.6789932250977 C68.9584121704102,83.8004837036133 69.4785690307617,82.5666961669922 69.4785690307617,81.3255920410156 C69.4785690307617,80.0844879150391 68.9584121704102,78.850715637207 68.064697265625,77.9721908569336 L39.5528182983398,49.9996185302734 L68.064697265625,22.0272846221924 C68.9768218994141,21.1319217681885 69.4994659423828,19.8668899536133 69.4803009033203,18.6013679504395 L69.4803009033203,18.6013679504395 Z"></path></svg>
+</div>
+<div id="xplplayernext" class="button" onclick="xplain.navigate(1)">
+<svg viewBox="0 0 70 100"><path d="M0,0 M70,100 M0.5191610455513,18.6013622283936 C0.538569211959839,17.3841876983643 1.05748128890991,16.18141746521 1.9347757101059,15.3202390670776 L15.6231327056885,1.8910231590271 C16.5188522338867,1.01177525520325 17.7781753540039,0.5 19.045223236084,0.5 C20.3122711181641,0.5 21.5715942382813,1.01177525520325 22.4673137664795,1.89102256298065 L68.0821304321289,46.6422958374023 C68.9783477783203,47.521053314209 69.5,48.7565422058105 69.5,49.9995994567871 C69.5,51.2426567077637 68.9783477783203,52.4781455993652 68.0821304321289,53.3569030761719 L22.4673137664795,98.1081771850586 C21.5715942382813,98.9874267578125 20.3122711181641,99.4991989135742 19.045223236084,99.4991989135742 C17.7781753540039,99.4991989135742 16.5188522338867,98.987419128418 15.6231327056885,98.1081771850586 L1.9347757101059,84.6789627075195 C1.04105448722839,83.8004531860352 0.520896136760712,82.5666656494141 0.520896136760712,81.3255615234375 C0.520896136760712,80.0844573974609 1.04105448722839,78.8506851196289 1.9347757101059,77.9721603393555 L30.4468784332275,49.9995994567871 L1.9347757101059,22.0272769927979 C1.02264547348022,21.1319141387939 0.5,19.8668823242188 0.5191610455513,18.6013622283936 L0.5191610455513,18.6013622283936 Z"></path></svg>
+</div>
+
+
+</div>
+<div id="fallbackmessage" style="display:none;margin:0 auto">
+<img src="./example-02/preview.jpg" style="width:100%" />
+<div class="fallback">We are sorry, but your browser does not support HelpXplain. Please use a decent browser and turn Javascript on.</div>
+</div>
+<script src="js/xplainAni.js" type="text/javascript"></script>
+<script src="js/xplainCss.js" type="text/javascript"></script>
+<script src="js/xplainTime.js" type="text/javascript"></script>
+<script src="js/xplainEase.js" type="text/javascript"></script>
+<script src="js/xplainSvg.js" type="text/javascript"></script>
+<script src="js/xplain.js" type="text/javascript"></script>
+<script>
+xplain = initXplain(true,true,false,1);
+
+</script>
+<noscript><div style="margin: 0 auto; text-align:center">
+<img src="./example-02/preview.jpg" style="width:100%" />
+<div class="fallback">We are sorry, but your browser does not support HelpXplain. Please use a decent browser and turn Javascript on.</div>
+</div></noscript>
+</body>
+</html>
